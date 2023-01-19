@@ -1,0 +1,102 @@
+html {
+    background: url(../images/bg-desktop.svg);
+    background-color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "mockup titulo"
+    "footer footer";
+
+    grid-template-columns: repeat(2,1fr);
+}
+
+.header img{
+    
+    padding: 30px;
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    
+    
+}
+
+.titulo h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.titulo p{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.titulo .btn-register{
+    display: flex;
+    align-items: flex-start;
+}
+.titulo .btn-register p{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: hsl(228, 45%, 44%);
+    padding: 10px 60px;
+    border-radius: 20px; 
+    transition: 0.3s; 
+}
+
+.titulo .btn-register a p:hover{
+    background-color: hsl(284, 71%, 60%);
+    color: #fff;
+}
+
+.mockup {
+    grid-area: mockup;
+    display: flex;
+    align-content: center;
+    margin: 40px;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    
+    justify-content: flex-end;
+    max-height: 100%;
+    max-width: 100%;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.footer .social a {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 20px;
+    transition: 0.3s;
+    
+}
+.footer .social a i{
+    transform: scale(1);
+    transition: 0.3s;
+}
+.footer .social a:hover{
+    color: hsl(284, 71%, 60%);
+    transform: scale(1.5);
+}
+
+.footer .social a i:hover{
+    transform: scale(1.5);
+}
